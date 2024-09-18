@@ -8,7 +8,6 @@ Create a `vars.tfvars` file with the following content, replacing the values wit
 
 ```hcl
 key_pair_name = "your-key-pair-name"
-security_group_id = "your-security-group-id"
 ```
 
 Then run the following commands:
@@ -29,7 +28,7 @@ terraform destroy -var-file=vars.tfvars -auto-approve
 
 Notes:
 
-- Any resources created within the cluster (PVs, LoadBalancers, etc) will need to be destoryed manually.
+- Any resources created within the cluster (PVs, LoadBalancers, etc) will need to be destroyed manually, unless imported prior to executing destroy command.
 
 ## Usage
 
